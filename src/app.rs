@@ -21,8 +21,8 @@ impl FromStr for Blockchains {
 impl ToString for Blockchains {
 	fn to_string(&self) -> String {
 		match self {
-			Network::Bitcoin => return String::from("Bitcoin"),
-			Network::Ethereum => return String::from("Ethereum")
+			Blockchains::Bitcoin => return String::from("Bitcoin"),
+			Blockchains::Ethereum => return String::from("Ethereum")
 		};
 	}
 }
