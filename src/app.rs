@@ -7,7 +7,7 @@ pub enum Blockchains {
 }
 
 impl FromStr for Blockchains {
-	type Err = {};
+	type Err = ();
 	
 	fn from_str(input: &str) -> Result<Blockchains, Self::Err> {
 		match input {
